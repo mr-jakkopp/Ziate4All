@@ -11,3 +11,6 @@ class ExampleCog(commands.Cog):
     async def hello(self, ctx):
         """Replies with a friendly greeting."""
         await ctx.send(f"Hello, {ctx.author.mention}!")
+
+def setup(bot):
+    bot.add_cog(ExampleCog(bot))
